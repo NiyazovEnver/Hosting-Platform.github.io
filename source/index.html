@@ -3,44 +3,56 @@
     	<meta charset="utf-8">
     	<title>Hosting Platform</title>
     	<link href="css/styles.css" type="text/css" rel="stylesheet">
-       
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
-
     <body>
-        <header class="page-header">
-            <h1 class="page-header__logo-">HOS</h1>
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item">
-                        <a href="#">About</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#">Features</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#">Services</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#">Pricing</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#">Blog</a>
-                    </li>
-                    
-                </ul>
-                <ul class=contact-list>
-                    <li class="contact-list__item">
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <small>Modern</small>
-            <h1 class="header__title">Hosting Platform</h1>
-            <p class="header__description">Web hosting makes the files that comprise a website available for viewing online.</p>
-            <button class="header__button">Services</button>
+        <div class="wrapper">
+            <header class="page-header">
+                <nav class="main-nav">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a href="#">
+                                <h1 class="page-header__logo">HOS</h1>
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#">Features</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                 
+                </nav>
+                <div class="page-header__container">
+                    <div class="container__item">
+                        <small class="page-header__small">Modern</small>
+                        <h1 class="header__title">Hosting Platform</h1>
+                        <p class="header__description">Web hosting makes the files that comprise a website available for viewing online.</p>
+                        <a class="header__button">Services</a>
+                    </div>
+                    <picture class="page-header__picture">
+                        <source srcset="img/pic.png" media="(min-width: 1200px)">
+                        <img class="header__image" src="img/mobile-header-img.png" width="570px" height="528px">
+                    </picture>
+                </div>
+           
 
-            <img class="header__image" src="img/logo-img.jpg" width="570px" height="528px">
-        </header>
+            </header>
+        </div>
         
         <main class="page-main">
             <img src="img/sponsors1.svg">
