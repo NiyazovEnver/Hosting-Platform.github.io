@@ -8,14 +8,13 @@
     </head>
     <body>
         <div class="wrapper">
+            
             <header class="page-header">
-                <nav class="main-nav">
+               
+            <nav class="main-nav main-nav--closed">
+                 <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+                    <h1 class="page-header__logo">HOS</h1>
                     <ul class="main-nav__list">
-                        <li class="main-nav__item">
-                            <a href="#">
-                                <h1 class="page-header__logo">HOS</h1>
-                            </a>
-                        </li>
                         <li class="main-nav__item">
                             <a href="#">About</a>
                         </li>
@@ -45,8 +44,10 @@
                         <a class="header__button">Services</a>
                     </div>
                     <picture class="page-header__picture">
-                        <source srcset="img/pic.png" media="(min-width: 1200px)">
-                        <img class="header__image" src="img/mobile-header-img.png" width="570px" height="528px">
+                         <source media="(min-width: 1200px)" srcset="img/pic.png"> 
+                        <source media="(min-width: 700px)" sizes="57%" srcset="img/mobile-header-img.png">
+                         
+                        <img class="header__image" src="img/pic.png" width="570px" height="528px">
                     </picture>
                 </div>
            
@@ -55,31 +56,47 @@
         </div>
         
         <main class="page-main">
-            <img src="img/sponsors1.svg">
-            <img src="img/sponsors2.svg">
-            <img src="img/sponsors3.svg">
-            <img src="img/sponsors4.svg">
-            <img src="img/sponsors5.svg">
+            <div class = "page-main__sponsors">
+                <img src="img/sponsors1.svg">
+                <img src="img/sponsors2.svg">
+                <img src="img/sponsors3.svg">
+                <img src="img/sponsors4.svg">
+                <img src="img/sponsors5.svg">
+            </div>
 
             <section class="features">
-                <h2 class="features__small">Features</h2>
+                <div class="features__flex">
+                    <img src="img/features-img.jpg">
+                    <div class="features__flex__elem">
+                        <h2 class="features__small">Features</h2>
 
-                <h1 class="features__title">Outstanding Features</h1>
-                <p class="features__desription">Website available for viewing online. Every website you've ever visited is hosted on a server.</p>
+                        <h1 class="features__title">Outstanding Features</h1>
+                        <p class="features__description">Website available for viewing online. Every website you've ever visited is hosted on a server.</p>
 
-                <button class="features__button-benefits">All benifits</button>
+                        <button class="features__button-benefits">All benifits</button>
+                    </div>
+                </div>
 
                 <ul class="features__list">
                     <li class="features__list__item">
-                        <h2 class="features__item__title">Better</h2>
+                        <div class="features__item__container">
+                            <img src="img/features__better.svg" width="48px" height="43px">
+                            <h2 class="features__item__title">Better</h2>
+                        </div>
                         <p class="features__item__description">Web hosting is a service that allows organizations and individuals.</p>
                     </li>
                     <li class="features__list__item">
-                        <h2 class="features__item__title">Faster</h2>
+                        <div class="features__item__container">
+                            <img src="img/features__faster.svg" width="48px" height="45px">
+                            <h2 class="features__item__title">Faster</h2>
+                        </div>
                         <p class="features__item__description">A web host, or web hosting service provider, is a business that provides the technologies.</p>
                     </li>
                     <li class="features__list__item">
-                        <h2 class="features__item__title">Stronger</h2>
+                        <div class="features__item__container">
+                            <img src="img/features__stronger.svg" width="48px" height="40px">
+                            <h2 class="features__item__title">Stronger</h2>
+                        </div>
                         <p class="features__item__description">Services needed for the website or webpage to be viewed in the Internet.</p>
                     </li>
                 </ul>
