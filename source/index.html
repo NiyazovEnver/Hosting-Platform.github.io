@@ -11,10 +11,10 @@
             
             <header class="page-header">
                
-            <nav class="main-nav main-nav--closed">
+            <nav class="main-nav main-nav--opened">
                  <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
                     <h1 class="page-header__logo">HOS</h1>
-                    <ul class="main-nav__list">
+                    <ul class="main-nav__list site-list">
                         <li class="main-nav__item">
                             <a href="#">About</a>
                         </li>
@@ -44,10 +44,9 @@
                         <a class="header__button">Services</a>
                     </div>
                     <picture class="page-header__picture">
-                         <source media="(min-width: 1200px)" srcset="img/pic.png"> 
-                        <source media="(min-width: 700px)" sizes="57%" srcset="img/mobile-header-img.png">
+                        <source media="(min-width: 1000px)" srcset="img/pic.png"> 
                          
-                        <img class="header__image" src="img/pic.png" width="570px" height="528px">
+                        <img class="header__image" src="img/mobile-header-img.png" width="100%">
                     </picture>
                 </div>
            
@@ -57,23 +56,27 @@
         
         <main class="page-main">
             <div class = "page-main__sponsors">
-                <img src="img/sponsors1.svg">
-                <img src="img/sponsors2.svg">
-                <img src="img/sponsors3.svg">
-                <img src="img/sponsors4.svg">
-                <img src="img/sponsors5.svg">
+                <img src="img/sponsors1.png">
+                <img src="img/sponsors2.png">
+                <img src="img/sponsors3.png">
+                <img src="img/sponsors4.png">
+                <img src="img/sponsors5.png">
             </div>
 
             <section class="features">
                 <div class="features__flex">
-                    <img src="img/features-img.jpg">
+                    <picture class="page-main__picture">
+                        <source media="(min-width: 1000px)" srcset="img/features-img.jpg"> 
+                         
+                        <img src="img/feature__mobile-img.jpg" width="100%">
+                    </picture>
                     <div class="features__flex__elem">
                         <h2 class="features__small">Features</h2>
 
                         <h1 class="features__title">Outstanding Features</h1>
                         <p class="features__description">Website available for viewing online. Every website you've ever visited is hosted on a server.</p>
 
-                        <button class="features__button-benefits">All benifits</button>
+                        <a class="features__button-benefits">All benifits</a>
                     </div>
                 </div>
 
@@ -102,12 +105,22 @@
                 </ul>
             </section>
             <section class="services">
-                <h2 class="services__small">Services</h2>
-                <h1 class="services__title">Wonderful Service</h1>
-                <p class="services__description">Services needed for the website or webpage to be viewed in the Internet.</p>
-                <button class="services__button">Learn more</button>
+                <div class="services__flex">
+                    <picture class="services__picture">
+                        <source media="(min-width: 1000px)" srcset="img/service-img.jpg"> 
+                             
+                        <img src="img/mobiles__services-img.jpg" width="100%">
+                    </picture>
+                    <div class="services__flex__item">
+                        <h2 class="services__small">Service</h2>
+                        <h1 class="services__title">Wonderful Service</h1>
+                        <p class="services__description">Service that allows organizations and individuals to post a website or web page onto the Internet.</p>
+                        <a class="services__button">Learn more</a>
+                    </div>
+                    
+                </div>
 
-                <img src="img/service-img.jpg">
+         
 
                 <ul class="services__list">
                     <li class="services__list__item">
@@ -127,39 +140,56 @@
                     </li>
                 </ul>
             </section>
-
+        </main>
+        <div class="wrapper">
             <section class="register">
                 <h2 class="register__title">Register domain name</h2>
                 <h1 class="register__description">Register Your Domain Name In 5 Minute</h1>
 
                 <form method="post" action="#">
-                    <label class="register__name-domain" for="name-domain">Your domain</label>
+                    <label class="visually-hidden" for="name-domain">Your domain</label>
                     <input id ="name-domain" placeholder="Your domain">
 
-                    <label class="register__domain" for="domain">Domain</label>
+                    <label class="visually-hidden" for="domain">Domain</label>
                     <select id ="domain">
-                        <option value="domain1">.com></option>
+                        <option value="domain1">.com</option>
                         <option value="domain2">.ru</option>
                         <option value="domain3">.org</option>
                         <option value="domain4">.edu</option>
                     </select>
+                    <button class="register__form__button" type="sumbit">Check</button>
                 </form>
             </section>
-
+        </div>
+        <main>
             <section class="stats">
-                <img src="img/stats.jpg" width="570px" height="528px">
+                <div class="stats__flex">
+                    <picture class="stats__picture">
+                            <source media="(min-width: 1000px)" srcset="img/stats.jpg"> 
+                                 
+                            <img src="img/mobile__stats-img.jpg" width="100%">
+                        </picture>
+                    <div class="stats__flex__item">
+                        <h2 class="stats__small">About</h2>
+                        <h1 class="stats__title">We Are Hosting Provider</h1>
+                        <p class="stats__description">Web hosting service provider, is a business that provides the technologies and services.</p>
 
-                <h2 class="stats-small">About</h2>
-                <h1 class="stats__title">We Are Hosting Provider</h1>
-                <p class="stats__description">Web hosting service provider, is a business that provides the technologies and services.</p>
-
-                <button class="stats__button">Read more</button>
-
+                        <button class="stats__button">Read more</button>
+                    </div>
+                </div>
                 <ul class="stats__list">
-                    <li class="stats__item">42% Best Website</li>
-                    <li class="stats__item">73+ Store Files</li>
-                    <li class="stats__item">5.000 Lovely Clients</li>
-                    <li class="stats__item">420< Popular Server</li>
+                    <li class="stats__item">
+                        <p class="stats__item__digit">42%</p><span> Best Website</span>
+                    </li>
+                    <li class="stats__item">
+                        <p class="stats__item__digit">73+</p> <span>Store Files</span>
+                    </li>
+                    <li class="stats__item">
+                        <p class="stats__item__digit">5.000</p> <span>Lovely Clients</span>
+                    </li>
+                    <l i class="stats__item">
+                        <p class="stats__item__digit">420<code><</code></p><span>Popular Server</span>
+                    </li>
                 </ul>
             </section>
 
@@ -167,17 +197,33 @@
                 <h2 class="map__title">Data Centers</h2>
                 <h1 class="map__description">Explore Our Centers Map</h1>
 
-                <img src="img/map.png" width="1170px" height="489px">
+                <picture class="stats__picture">
+                   <source media="(min-width: 1000px)" srcset="img/map.png"> 
+                                 
+                    <img src="img/mobile__map.png" width="100%">
+                </picture>
             </section>
 
             <section class="recommendation">
-                <h1 class="recommendation__title">Testimonails</h1>
-                <h2 class="recommendation__title2">What People Say About Us</h2>
-
-                <img src="img/recommendation.jpg" width="570px" height="328px"> 
-                <blockquote class="recomendation__description">Hosting is a service that allows organizations and individuals to post a website or web page onto the Internet. A web host, or web hosting service provider, is a business that provides the technologies.</blockquote>
-                <address class="recommendation__author">Henk Fortuin</address>
-                <address class="recommendation__author">SuperApp</address>
+                 
+                    <h1 class="recommendation__small">Testimonails</h1>
+                    <h2 class="recommendation__title">What People Say About Us</h2>
+                    <div class="recommendation__flex">
+                        <picture class="recommendation__picture">
+                           <source media="(min-width: 1000px)" srcset="img/recommendation.jpg"> 
+                                         
+                            <img src="img/mobile__recommendation.jpg" width="100%">
+                        </picture>
+                        <div class="recommendation__flex__item">
+                        <blockquote class="recommendation__quote">Hosting is a service that allows organizations and individuals to post a website or web page onto the Internet. A web host, or web hosting service provider, is a business that provides the technologies.</blockquote> 
+                        <address class="recommendation__author">Henk Fortuin</address>
+                        <address class="recommendation__post">SuperApp</address> 
+                    </div>
+                
+                    <button class="recommendation__button-prev"><code><</code></button>
+                    <button class="recommendation__button-next"><code>></code></button>
+                    
+                </div>
             </section>
 
             <section class="FAQ">
@@ -194,79 +240,94 @@
             </section>
 
             <section class="news">
-                <h2 class="news__title">Blog & News</h2>
-                <h1 class="news__title2">Learn Recent News and Blogs</h1>
+                <h2 class="news__small">Blog & News</h2>
+                <h1 class="news__title">Learn Recent News and Blogs</h1>
 
                 <ul class="news__list">
                     <li class="news__list__item">
                         <img src="img/news1.jpg" width="270px" height="144px">
-                        <time class="news__date" datetime="2020-11-29">Decebmer 27</time>
+                        <p><time class="news__date" datetime="2020-11-29">Decebmer 27</time></p>
                         <p class="news__item">Website or web page onto</p>
-                        <p class="news__item__categories">Hosting</p>
+                        <a class="news__item__categories">Hosting</a>
                     </li>
                     <li class="news__list__item">
                         <img src="img/news2.jpg" width="270px" height="144px">
                         <time class="news__date" datetime="2020-11-25">Decebmer 25</time>
                         <p class="news__item">Individuals to post a website</p>
-                        <p class="news__item__categories">Technologies</p>
+                        <a class="news__item__categories">Technologies</a>
                     </li>
                     <li class="news__list__item">
                         <img src="img/news3.jpg" width="270px" height="144px">
                         <time class="news__date" datetime="2020-11-23">Decebmer 23</time>
                         <p class="news__item">Web host, or web hosting service</p>
-                        <p class="news__item__categories">Website</p>
+                        <a class="news__item__categories">Website</a>
                     </li>
                     <li class="news__list__item">
                         <img src="img/news4.jpg" width="270px" height="144px">
                         <time class="news__date" datetime="2020-11-19">Decebmer 19</time>
                         <p class="news__item">Business that provides</p>
-                        <p class="news__item__categories">Internet</p>
+                        <a class="news__item__categories">Internet</a>
                     </li>
                 </ul>
 
-                <article class="news__newsletter">
-                    <h3 class="news__newsletter__title">Newsletter</h3>
-                    <p class="news__newsletter__description">Page onto the Internet. A web host, or web hosting service provider.</p>
-                    <form class="news__login" action="#">
-                        <label class="visually-hidden" for="email">Email</label>
-                            <input type="email" name="login" placeholder="Your email">
-                        <button class="news__newsletter__button">Subscribe</button>
-                    </form>
-                </article>
-                <article class="news__definition">
-                    <h3 class="news__definition__title">Web Hosting Definition</h3>
-                    <p class="news__definition__description">Onto the Internet. A web host, or web hosting service provider, is a business that provides the technologies and services.</p>
-                </article>
+                <div class="news__flex">
+                    <article class="news__newsletter">
+                        <h3 class="news__newsletter__title">Newsletter</h3>
+                        <p class="news__newsletter__description">Page onto the Internet. A web host, or web hosting service provider.</p>
+                        <form class="news__login" action="#">
+                            <label class="visually-hidden" for="email">Email</label>
+                                <input type="email" id="email" placeholder="Your email">
+                            <button class="news__newsletter__button" action="#" type="sumbit">Subscribe</button>
+                        </form>
+                    </article>
+                    <article class="news__definition">
+                        <h3 class="news__definition__title">Web Hosting Definition</h3>
+                        <p class="news__definition__description">Onto the Internet. A web host, or web hosting service provider, is a business that provides the technologies and services.</p>
+                    </article>
+                </div>
             </section>
 
             <section class="downloads">
-                <h2 class="downloads__title">Download app</h2>
-                <p class="downloads__description">Business that provides the technologies and services needed for the website or webpage.</p>
-                <a class="downloads__button" download="#">Download app</a>
+                <div class="downloads__flex">
+                    <picture class="downloads__picture">
+                        <source media="(min-width: 1000px)" srcset="img/download.jpg"> 
+                                             
+                        <img src="img/mobile__download.jpg" width="100%">
+                    </picture>
+                    <div class="downloads__flex__item">
+                        <h2 class="downloads__small">Download app</h2>
+                        <h1 class="downloads__title">Get Hosting Application</h1>
+
+                        <p class="downloads__description">Business that provides the technologies and services needed for the website or webpage.</p>
+                        <a class="downloads__button" download="#">Download app</a>
+                    </div>
+                </div>
 
             </section>
 
             <section class="price">
-                <h2 class="price__title">Pricing</h2>
-                <strong>Solution For All Your Hosting Needs</strong>
-                <button class="price__toggle1">Monthly</button>
-                <button class="price__toggle2">Yearly</button>
+                <h2 class="price__small">Pricing</h2>
+                <h1 class="price__title">Solution For All Your Hosting Needs</h1>
+                <div class="price__toggle-center">
+                    <button class="price__toggle1">Monthly</button>
+                    <button class="price__toggle2">Yearly</button>
+                </div>
 
                 <ul class="price__list">
                     <li class="price__list__item">
-                        <span class="price__package">Start</span>
-                        <p><b>7$</b>/month</p>
+                        <p class="price__package">Start</p>
+                        <p><b>7$</b>/&nbsp;month</p>
                         <p class="price__item__buy">Buy a domain name without hosting.</p>
                         <ul class="price__item__list">
                             <li>Web Hosting</li>
                             <li>Dedicated Server</li>
                             <li>Cloud Hosting</li>
                         </ul>
-                        <a href="#" class="price__list__button1">Get started</a>
+                        <a href="#" class="price__list__button">Get started</a>
                     </li>
                     <li class="price__list__item">
-                        <span class="price__package">Optimum</span>
-                        <p><b>15$</b>/month</p>
+                        <p class="price__package">Optimum</p>
+                        <p><b>15$</b>/&nbsp;month</p>
                         <p class="price__item__buy">Hosting provider to register your domain name.</p>
                         <ul class="price__item__list">
                             <li>Web Hosting</li>
@@ -274,11 +335,11 @@
                             <li>Cloud Hosting</li>
                             <li>Clustered hosting</li>
                         </ul>
-                        <a href="#" class="price__list__button2">Get started</a>
+                        <a href="#" class="price__list__button">Get started</a>
                     </li>
                     <li class="price__list__item">
-                        <span class="price__package">Optimum</span>
-                        <p><b>99$</b>/month</p>
+                        <p class="price__package">Professional</p>
+                        <p><b>99$</b>/&nbsp;month</p>
                         <p class="price__item__buy">Buy it by paying a fee and registering it with a domain.</p>
                         <ul class="price__item__list">
                             <li>Web Hosting</li>
@@ -287,65 +348,94 @@
                             <li>Clustered hosting</li>
                             <li>Domain Name</li>
                         </ul>
-                        <a href="#" class="price__list__button3">Get started</a>
+                        <a href="#" class="price__list__button">Get started</a>
                     </li>
                 </ul>
 
             </section>
 
             <section class="contact">
-                <h2 class="contact__small-title">Contact us</h2>
+                <h2 class="contact__small">Contact us</h2>
                 <h1 class="contact__title">Every Website In The World Need A Server</h1>
-                <p class="contact-description">The sky was cloudless and of a deep dark blue spectacle before us was indeed sublime.</p>
-                <a href="#">Get started</a>
+                <p class="contact__description">The sky was cloudless and of a deep dark blue spectacle before us was indeed sublime.</p>
+                <div class="contact__flex__button">
+                    <a class="contact__button1" href="#">Get started</a>
+                    <a class="contact__button2" href="#">Contact us</a>
+                </div>
             </section>
         </main>
 
+    <div class="footer-wrapper">
         <footer class="page-footer">
-            <h1 class="page-footer__logo-">HOS</h1>
+            <div class="page-footer__flex">
+            <h1 class="page-footer__logo">HOS</h1>
             
-            <nav class="main-nav footer">
-                <p class="page__footer-menu">Menu</p>
-                <ul class="main-nav__list">
-                    <li class="main-nav__item">
+            <nav class="footer__nav">
+                <h3 class="footer__nav__title">Menu</h3>
+                <ul class="footer__nav__list">
+                    <li class="footer__nav__item">
                         <a href="#">About</a>
                     </li>
-                    <li class="main-nav__item">
-                        <a href="#">Features</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#">Services</a>
-                    </li>
-                    <li class="main-nav__item">
+                    <li class="footer__nav__item">
                         <a href="#">Pricing</a>
                     </li>
-                    <li class="main-nav__item">
+                    <li class="footer__nav__item">
                         <a href="#">Blog</a>
+                    </li>
+                    <li class="footer__nav__item">
+                        <a href="#">Contact</a>
                     </li>
                     
                 </ul>
             </nav>
-            <p>Services</p>
-            <ul class="page-footer__services">
-                <li class="page-footer__services__item">
-                    <a href="#">Shared Hosting</a>
-                </li>
-                <li class="page-footer__services__item">
-                    <a href="#">Cloud Hosting</a>
-                </li>
-                <li class="page-footer__services__item">
-                    <a href="#">WordPress Hosting</a>
-                </li>
-                <li class="page-footer__services__item">
-                    <a href="#">See More</a>
-                </li>
-            </ul>
+            <div>
+                <h3 class="footer__services">Services</h3>
+                <ul class="page-footer__services__list">
+                    <li class="page-footer__services__item">
+                        <a href="#">Shared Hosting</a>
+                    </li>
+                    <li class="page-footer__services__item">
+                        <a href="#">Cloud Hosting</a>
+                    </li>
+                    <li class="page-footer__services__item">
+                        <a href="#">WordPress Hosting</a>
+                    </li>
+                    <li class="page-footer__services__item">
+                        <a href="#">See More</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__contact-icon">
+                <a href="facebook.com"> 
+                <svg id="icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="24" fill="#1D46F6"/>
+                    <path d="M21.6667 21.3333H19V24H21.6667V32H25.6667V24H28.0933L28.3333 21.3333H25.6667V20.2227C25.6667 19.5853 25.7947 19.3333 26.4107 19.3333H28.3333V16H25.128C22.7307 16 21.6667 17.056 21.6667 19.0773V21.3333Z" fill="white"/>
+                </svg>
+            </a>
+            <a href="instagram.com">
+                <svg id="icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="24" fill="#1D46F6"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 16C21.8267 16 21.556 16.0093 20.7013 16.0493C17.7947 16.1827 16.1813 17.7947 16.048 20.7013C16.0093 21.556 16 21.828 16 24C16 26.1733 16.0093 26.4453 16.048 27.2987C16.1813 30.204 17.7947 31.8187 20.7013 31.952C21.556 31.9907 21.8267 32 24 32C26.1733 32 26.4453 31.9907 27.3 31.952C30.2013 31.8187 31.8213 30.2067 31.952 27.2987C31.9907 26.4453 32 26.1733 32 24C32 21.828 31.9907 21.556 31.952 20.7013C31.8213 17.7987 30.2067 16.1813 27.3 16.0493C26.4453 16.0093 26.1733 16 24 16ZM24 17.4427C26.136 17.4427 26.3893 17.4507 27.2333 17.4893C29.4027 17.588 30.4133 18.616 30.5133 20.768C30.5507 21.612 30.5587 21.864 30.5587 24C30.5587 26.136 30.5507 26.3893 30.5133 27.232C30.4133 29.3827 29.404 30.4133 27.2333 30.512C26.3893 30.5493 26.1373 30.5587 24 30.5587C21.864 30.5587 21.6107 30.5507 20.768 30.512C18.5947 30.412 17.588 29.38 17.488 27.232C17.4507 26.3893 17.4413 26.136 17.4413 24C17.4413 21.864 17.4507 21.6107 17.488 20.768C17.5867 18.6147 18.5973 17.5867 20.768 17.488C21.6107 17.4493 21.864 17.4427 24 17.4427ZM19.892 24C19.892 21.7307 21.732 19.892 24 19.892C26.268 19.892 28.108 21.732 28.108 24C28.108 26.2693 26.268 28.108 24 28.108C21.732 28.108 19.892 26.2693 19.892 24ZM24 26.6667C22.5267 26.6667 21.3333 25.4733 21.3333 24C21.3333 22.528 22.5267 21.3333 24 21.3333C25.472 21.3333 26.668 22.5267 26.668 24C26.668 25.4733 25.472 26.6667 24 26.6667ZM27.3093 19.7307C27.3093 19.2 27.74 18.7707 28.2693 18.7707C28.8013 18.7707 29.2307 19.2 29.2307 19.7307C29.2307 20.2613 28.8 20.6907 28.2693 20.6907C27.7387 20.6907 27.3093 20.26 27.3093 19.7307Z" fill="white"/>
+                </svg>
+            </a>
 
-            <small>Copyright © 2020 Laaqiq. All Rights Reserved.</small>
-            <small>Terms of Use</small>
-            <small>Privacy Policy</small>
+            <a href="twitter.com">
+                <svg id="icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="24" fill="#1D46F6"/>
+                <path d="M32 19.54C31.412 19.8013 30.7787 19.9773 30.1147 20.0573C30.7933 19.6507 31.312 19.008 31.5587 18.2413C30.924 18.6173 30.2213 18.8907 29.4733 19.0373C28.876 18.3987 28.0213 18 27.0787 18C24.9587 18 23.4013 19.9773 23.88 22.0307C21.1533 21.8933 18.7333 20.5867 17.1147 18.6013C16.2547 20.076 16.6693 22.0067 18.1307 22.984C17.5933 22.9667 17.088 22.8187 16.6453 22.5733C16.6093 24.0933 17.7 25.516 19.2787 25.8333C18.8173 25.9587 18.3107 25.988 17.796 25.8893C18.2133 27.1933 19.428 28.1413 20.8627 28.168C19.48 29.2507 17.7427 29.7347 16 29.5293C17.4533 30.4613 19.1773 31.004 21.0307 31.004C27.1267 31.004 30.5693 25.856 30.3613 21.2387C31.004 20.7773 31.56 20.1987 32 19.54Z" fill="white"/>
+                </svg>
+             </a>
+        </div>
+    </div>
+        <div class="footer__wrapper__flex">
+            <p class="footer__copyright">Copyright © 2020 Laaqiq. All Rights Reserved.</p>
+            <div class="footer__flex__copyright">
+                <p class="footer__terms">Terms of Use</p>
+                <p class="footer__privacy">Privacy Policy</p>
+            </div>
+        </div>
         </footer>
-
+    </div>
     </body>
 
 </html>

@@ -1,0 +1,95 @@
+.services {
+  margin-bottom: 150px;
+  padding-left: 23px;
+  padding-right: 23px; }
+
+.services__picture {
+  margin: 0;
+  margin-bottom: 28px; }
+
+.services__small {
+  color: #ED3A4E;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  margin-bottom: 16px; }
+
+.services__title {
+  color: #333333;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  margin-bottom: 15px; }
+
+.services__description {
+  color: #333333;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 16px; }
+
+.services__button {
+  display: block;
+  text-align: center;
+  vertical-align: center;
+  font-size: 14px;
+  color: #1D46F6;
+  width: 170px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid rgba(29, 70, 246, 0.3);
+  border-radius: 5px; }
+  .services__button:hover, .services__button:focus, .services__button:active {
+    background-color: #1D46F6;
+    color: white;
+    cursor: pointer; }
+
+.services__flex {
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column; }
+
+.services__item__title {
+  font-size: 24px;
+  line-height: 32px;
+  color: #333;
+  margin-bottom: 18px; }
+
+.services__item__description {
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(51, 51, 51, 0.5);
+  margin-bottom: 11px; }
+
+.services__item {
+  font-size: 16px;
+  line-height: 32px;
+  color: #333; }
+
+.services__list__item {
+  margin-bottom: 62px; }
+
+@media (min-width: 1000px) {
+  .services__flex {
+    flex-direction: row-reverse;
+    justify-content: space-between; }
+  .services__small {
+    margin-bottom: 38px; }
+  .services__title {
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    margin-bottom: 29px; }
+  .services__description {
+    margin-bottom: 29px; }
+  .services__flex__item {
+    padding-top: 42px;
+    width: 470px; }
+  .services__list {
+    display: flex;
+    justify-content: space-between; }
+  .services__list__item {
+    width: 338px; } }

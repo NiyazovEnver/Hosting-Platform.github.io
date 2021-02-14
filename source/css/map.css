@@ -1,0 +1,34 @@
+.map {
+  width: 375px;
+  margin: 0 auto;
+  padding-left: 23px;
+  padding-right: 23px;
+  margin-bottom: 144px; }
+
+.map__title {
+  color: #ED3A4E;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  text-align: center; }
+
+.map__description {
+  color: #333333;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  margin-bottom: 54px;
+  text-align: center; }
+
+@media (min-width: 1000px) {
+  .map {
+    width: 1170px; }
+  .map__title {
+    margin-bottom: 18px; }
+  .map__description {
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -2px; } }

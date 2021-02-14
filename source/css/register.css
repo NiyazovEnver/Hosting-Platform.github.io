@@ -1,0 +1,86 @@
+.register {
+  padding-top: 74px;
+  width: 375px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  padding-left: 23px;
+  padding-right: 23px;
+  margin-bottom: 126px; }
+
+.register__title {
+  color: #ED3A4E;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  margin-bottom: 14px;
+  text-align: center;
+  letter-spacing: 3px; }
+
+.register__description {
+  text-align: center;
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+  font-weight: bold; }
+
+#name-domain {
+  width: 329px;
+  height: 50px;
+  border-radius: 7px;
+  padding-left: 15px;
+  margin-bottom: 15px; }
+
+#domain {
+  width: 169px;
+  height: 50px;
+  padding-left: 15px;
+  border-radius: 7px;
+  margin-right: 12px; }
+
+.register__form__button {
+  width: 148px;
+  height: 50px;
+  border-radius: 7px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #ED3A4E; }
+  .register__form__button:hover, .register__form__button:focus, .register__form__button:active {
+    background-color: rgba(237, 58, 78, 0.9);
+    color: white;
+    cursor: pointer; }
+
+.register form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+@media (min-width: 1000px) {
+  .register form {
+    flex-wrap: nowrap; }
+  #name-domain {
+    margin-right: 9px;
+    width: 262px; }
+  #domain {
+    margin-right: 8px;
+    width: 121px; }
+  .register__form__button {
+    width: 106px;
+    height: 48px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ED3A4E; }
+  .register {
+    width: 506px; }
+  .register__description {
+    text-align: center;
+    font-size: 40px;
+    line-height: 48px;
+    color: white;
+    font-weight: bold; } }

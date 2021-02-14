@@ -1,0 +1,116 @@
+.recommendation {
+  width: 375px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  padding-left: 23px;
+  padding-right: 23px; }
+
+.recommendation__small {
+  color: #ED3A4E;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  margin-bottom: 16px; }
+
+.recommendation__title {
+  color: #333333;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  margin-bottom: 53px; }
+
+.recommendation__quote {
+  color: #333;
+  margin: 0;
+  margin-top: 38px;
+  font-size: 20px;
+  line-height: 32px; }
+
+.recommendation__author {
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
+  font-style: inherit;
+  display: inline-block;
+  margin-top: 10px; }
+
+.recommendation__post {
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
+  font-style: inherit;
+  opacity: 0.5;
+  display: inline-block; }
+
+.recommendation__button-next {
+  margin-top: 38px;
+  width: 48px;
+  height: 48px;
+  background-color: #ED3A4E;
+  border-radius: 50%;
+  font-weight: 900;
+  border: none;
+  font-size: 20px;
+  color: white; }
+  .recommendation__button-next:hover, .recommendation__button-next:focus, .recommendation__button-next:active {
+    background-color: rgba(237, 58, 78, 0.8);
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none; }
+
+.recommendation__button-prev {
+  margin-top: 38px;
+  width: 48px;
+  height: 48px;
+  background-color: #ED3A4E;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+  margin-right: 8px; }
+  .recommendation__button-prev:hover, .recommendation__button-prev:focus, .recommendation__button-prev:active {
+    background-color: rgba(237, 58, 78, 0.8);
+    color: white;
+    cursor: pointer;
+    outline: none; }
+
+@media (min-width: 1000px) {
+  .recommendation {
+    width: 1170px;
+    margin-bottom: 235px; }
+  .recommendation__small {
+    margin-bottom: 18px; }
+  .recommendation__title {
+    color: #333333;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    margin-bottom: 53px;
+    width: 400px; }
+  .recommendation__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .recommendation__flex__item {
+    width: 470px; }
+  .recommendation__button-next {
+    width: 48px;
+    height: 48px;
+    background-color: #ED3A4E;
+    border-radius: 50%;
+    color: white; }
+  .recommendation__button-prev {
+    width: 48px;
+    height: 48px;
+    background-color: #ED3A4E;
+    border-radius: 50%;
+    order: -1;
+    color: white;
+    font-weight: 900;
+    font-size: 20px; }
+  .recommendation__quote {
+    margin-bottom: 30px; } }
