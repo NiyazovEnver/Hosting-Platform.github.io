@@ -1,8 +1,4 @@
 .map{
-	width: 375px;
-	margin: 0 auto;
-	padding-left: 23px;
- 	padding-right: 23px;
 	margin-bottom: 144px;
 }
 
@@ -26,7 +22,7 @@
 	text-align: center;
 }
 
-@media(min-width: 1000px){
+@media(min-width: 1200px){
 	.map{
 		width: 1170px;
 	}

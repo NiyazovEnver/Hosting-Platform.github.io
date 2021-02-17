@@ -1,6 +1,4 @@
 .downloads {
-  width: 375px;
-  margin: 0 auto;
   margin-bottom: 186px; }
 
 .downloads__small {
@@ -26,6 +24,10 @@
   line-height: 32px;
   margin-bottom: 16px; }
 
+.downloads__picture {
+  width: 329px;
+  margin: 0 auto; }
+
 .downloads__button {
   display: block;
   text-align: center;
@@ -44,7 +46,7 @@
     color: white;
     cursor: pointer; }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .downloads {
     width: 1170px;
     margin-bottom: 154px; }
@@ -65,4 +67,6 @@
   .downloads__title {
     font-size: 56px;
     line-height: 64px;
-    margin-bottom: 29px; } }
+    margin-bottom: 29px; }
+  .downloads__picture {
+    width: 570px; } }

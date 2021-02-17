@@ -1,9 +1,8 @@
 .contact{
-	width: 375px;
-	margin: 0 auto;
-	padding-right: 23px;
-	padding-left: 23px;
+	
 	margin-bottom: 161px;
+	padding-right: 5px;
+	padding-left: 5px;
 }
 
 .contact__small{
@@ -95,7 +94,7 @@
 
 }
 
-@media(min-width: 1000px){
+@media(min-width: 1200px){
 	.contact{
 		width: 1170px;
 

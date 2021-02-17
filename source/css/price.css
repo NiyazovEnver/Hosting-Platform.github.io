@@ -1,6 +1,4 @@
 .price {
-  width: 375px;
-  margin: 0 auto;
   margin-bottom: 154px; }
 
 .price__small {
@@ -96,7 +94,7 @@
     color: white;
     cursor: pointer; }
 
-@media (min-width: 1170px) {
+@media (min-width: 1200px) {
   .price {
     width: 1170px;
     margin: 0 auto;

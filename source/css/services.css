@@ -1,10 +1,11 @@
 .services {
   margin-bottom: 150px;
-  padding-left: 23px;
-  padding-right: 23px; }
+  padding-left: 5px;
+  padding-right: 5px; }
 
 .services__picture {
-  margin: 0;
+  margin: 0 auto;
+  width: 329px;
   margin-bottom: 28px; }
 
 .services__small {
@@ -72,7 +73,7 @@
 .services__list__item {
   margin-bottom: 62px; }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .services__flex {
     flex-direction: row-reverse;
     justify-content: space-between; }
@@ -92,4 +93,6 @@
     display: flex;
     justify-content: space-between; }
   .services__list__item {
-    width: 338px; } }
+    width: 338px; }
+  .services__picture {
+    width: 570px; } }

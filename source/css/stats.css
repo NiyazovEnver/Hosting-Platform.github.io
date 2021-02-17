@@ -1,11 +1,9 @@
 .stats {
-  width: 375px;
-  margin: 0 auto;
-  padding-left: 23px;
-  padding-right: 23px;
   margin-bottom: 160px; }
 
 .stats__picture {
+  width: 329px;
+  margin: 0 auto;
   margin-bottom: 27px; }
 
 .stats__small {
@@ -64,7 +62,7 @@
   font-size: 20px;
   width: 160px; }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .stats {
     width: 1170px; }
   .stats__flex {
@@ -74,4 +72,6 @@
     padding-top: 42px;
     width: 470px; }
   .stats__item {
-    width: auto; } }
+    width: auto; }
+  .stats__picture {
+    width: 570px; } }

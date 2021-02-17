@@ -1,6 +1,7 @@
 <DOCTYPE html>
 	<head>
     	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
     	<title>Hosting Platform</title>
     	<link href="css/styles.css" type="text/css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -9,29 +10,29 @@
     <body>
         <div class="wrapper">
             
-            <header class="page-header">
+            <header class="page-header" id="about">
                
-            <nav class="main-nav main-nav--opened">
+            <nav class="main-nav main-nav--closed">
                  <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
                     <h1 class="page-header__logo">HOS</h1>
-                    <ul class="main-nav__list site-list">
+                    <ul class="main-nav__list">
                         <li class="main-nav__item">
-                            <a href="#">About</a>
+                            <a class="main-nav__item-link" href="#about">About</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#">Features</a>
+                            <a class="main-nav__item-link" href="#features">Features</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#">Services</a>
+                            <a class="main-nav__item-link" href="#services">Services</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#">Pricing</a>
+                            <a class="main-nav__item-link" href="#pricing">Pricing</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#">Blog</a>
+                            <a class="main-nav__item-link" href="#blog">Blog</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#">Contact</a>
+                            <a class="main-nav__item-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                  
@@ -44,7 +45,7 @@
                         <a class="header__button">Services</a>
                     </div>
                     <picture class="page-header__picture">
-                        <source media="(min-width: 1000px)" srcset="img/pic.png"> 
+                        <source media="(min-width: 1200px)" srcset="img/pic.png"> 
                          
                         <img class="header__image" src="img/mobile-header-img.png" width="100%">
                     </picture>
@@ -55,18 +56,18 @@
         </div>
         
         <main class="page-main">
-            <div class = "page-main__sponsors">
-                <img src="img/sponsors1.png">
-                <img src="img/sponsors2.png">
-                <img src="img/sponsors3.png">
-                <img src="img/sponsors4.png">
-                <img src="img/sponsors5.png">
-            </div>
+            <ul class = "page-main__sponsors">
+                <li><img src="img/sponsors1.png"></li>
+                <li><img src="img/sponsors2.png"></li>
+                <li><img src="img/sponsors3.png"></li>
+                <li><img src="img/sponsors4.png"></li>
+                <li><img src="img/sponsors5.png"></li>
+            </ul>
 
-            <section class="features">
+            <section class="features" id="features">
                 <div class="features__flex">
                     <picture class="page-main__picture">
-                        <source media="(min-width: 1000px)" srcset="img/features-img.jpg"> 
+                        <source media="(min-width: 1200px)" srcset="img/features-img.jpg"> 
                          
                         <img src="img/feature__mobile-img.jpg" width="100%">
                     </picture>
@@ -104,10 +105,10 @@
                     </li>
                 </ul>
             </section>
-            <section class="services">
+            <section class="services" id="services">
                 <div class="services__flex">
                     <picture class="services__picture">
-                        <source media="(min-width: 1000px)" srcset="img/service-img.jpg"> 
+                        <source media="(min-width: 1200px)" srcset="img/service-img.jpg"> 
                              
                         <img src="img/mobiles__services-img.jpg" width="100%">
                     </picture>
@@ -161,11 +162,11 @@
                 </form>
             </section>
         </div>
-        <main>
+        <main class="page-main">
             <section class="stats">
                 <div class="stats__flex">
                     <picture class="stats__picture">
-                            <source media="(min-width: 1000px)" srcset="img/stats.jpg"> 
+                            <source media="(min-width: 1200px)" srcset="img/stats.jpg"> 
                                  
                             <img src="img/mobile__stats-img.jpg" width="100%">
                         </picture>
@@ -198,7 +199,7 @@
                 <h1 class="map__description">Explore Our Centers Map</h1>
 
                 <picture class="stats__picture">
-                   <source media="(min-width: 1000px)" srcset="img/map.png"> 
+                   <source media="(min-width: 1200px)" srcset="img/map.png"> 
                                  
                     <img src="img/mobile__map.png" width="100%">
                 </picture>
@@ -210,15 +211,17 @@
                     <h2 class="recommendation__title">What People Say About Us</h2>
                     <div class="recommendation__flex">
                         <picture class="recommendation__picture">
-                           <source media="(min-width: 1000px)" srcset="img/recommendation.jpg"> 
+                           <source media="(min-width: 1200px)" srcset="img/recommendation.jpg"> 
                                          
                             <img src="img/mobile__recommendation.jpg" width="100%">
                         </picture>
+                        
                         <div class="recommendation__flex__item">
-                        <blockquote class="recommendation__quote">Hosting is a service that allows organizations and individuals to post a website or web page onto the Internet. A web host, or web hosting service provider, is a business that provides the technologies.</blockquote> 
-                        <address class="recommendation__author">Henk Fortuin</address>
-                        <address class="recommendation__post">SuperApp</address> 
-                    </div>
+                            <blockquote class="recommendation__quote">Hosting is a service that allows organizations and individuals to post a website or web page onto the Internet. A web host, or web hosting service provider, is a business that provides the technologies.</blockquote> 
+                            <address class="recommendation__author">Henk Fortuin</address>
+                            <address class="recommendation__post">SuperApp</address> 
+                        </div>
+                       
                 
                     <button class="recommendation__button-prev"><code><</code></button>
                     <button class="recommendation__button-next"><code>></code></button>
@@ -239,7 +242,7 @@
                 </ul>
             </section>
 
-            <section class="news">
+            <section class="news" id="blog">
                 <h2 class="news__small">Blog & News</h2>
                 <h1 class="news__title">Learn Recent News and Blogs</h1>
 
@@ -290,7 +293,7 @@
             <section class="downloads">
                 <div class="downloads__flex">
                     <picture class="downloads__picture">
-                        <source media="(min-width: 1000px)" srcset="img/download.jpg"> 
+                        <source media="(min-width: 1200px)" srcset="img/download.jpg"> 
                                              
                         <img src="img/mobile__download.jpg" width="100%">
                     </picture>
@@ -305,7 +308,7 @@
 
             </section>
 
-            <section class="price">
+            <section class="price" id="pricing">
                 <h2 class="price__small">Pricing</h2>
                 <h1 class="price__title">Solution For All Your Hosting Needs</h1>
                 <div class="price__toggle-center">
@@ -354,7 +357,7 @@
 
             </section>
 
-            <section class="contact">
+            <section class="contact" id="contact">
                 <h2 class="contact__small">Contact us</h2>
                 <h1 class="contact__title">Every Website In The World Need A Server</h1>
                 <p class="contact__description">The sky was cloudless and of a deep dark blue spectacle before us was indeed sublime.</p>
@@ -374,16 +377,16 @@
                 <h3 class="footer__nav__title">Menu</h3>
                 <ul class="footer__nav__list">
                     <li class="footer__nav__item">
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li class="footer__nav__item">
-                        <a href="#">Pricing</a>
+                        <a href="#pricing">Pricing</a>
                     </li>
                     <li class="footer__nav__item">
-                        <a href="#">Blog</a>
+                        <a href="#blog">Blog</a>
                     </li>
                     <li class="footer__nav__item">
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                     
                 </ul>
@@ -436,6 +439,9 @@
         </div>
         </footer>
     </div>
+
+    <script src="js/script.js"></script>
+
     </body>
 
 </html>

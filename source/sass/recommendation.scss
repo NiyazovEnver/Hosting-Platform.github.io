@@ -1,9 +1,6 @@
 .recommendation{
-	width: 375px;
-	margin: 0 auto;
 	margin-bottom: 120px;
-	padding-left: 23px;
- 	padding-right: 23px;
+
 }
 
 .recommendation__small{
@@ -14,6 +11,11 @@
 	line-height: 32px;
 	font-weight: 400;
 	margin-bottom: 16px;
+}
+
+.recommendation__picture{
+	width: 329px;
+	margin: 0 auto;
 }
 
 .recommendation__title{
@@ -98,7 +100,7 @@
 	}
 
 
-@media(min-width: 1000px){
+@media(min-width: 1200px){
 	.recommendation{
 		width: 1170px;
 		margin-bottom: 235px;
@@ -145,5 +147,8 @@
 
 	.recommendation__quote{
 		margin-bottom: 30px;
+	}
+	.recommendation__picture{
+		width: 570px;
 	}
 }

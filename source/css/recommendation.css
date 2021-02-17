@@ -1,9 +1,5 @@
 .recommendation {
-  width: 375px;
-  margin: 0 auto;
-  margin-bottom: 120px;
-  padding-left: 23px;
-  padding-right: 23px; }
+  margin-bottom: 120px; }
 
 .recommendation__small {
   color: #ED3A4E;
@@ -13,6 +9,10 @@
   line-height: 32px;
   font-weight: 400;
   margin-bottom: 16px; }
+
+.recommendation__picture {
+  width: 329px;
+  margin: 0 auto; }
 
 .recommendation__title {
   color: #333333;
@@ -78,7 +78,7 @@
     cursor: pointer;
     outline: none; }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .recommendation {
     width: 1170px;
     margin-bottom: 235px; }
@@ -113,4 +113,6 @@
     font-weight: 900;
     font-size: 20px; }
   .recommendation__quote {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .recommendation__picture {
+    width: 570px; } }
