@@ -1,7 +1,5 @@
 .contact {
-  margin-bottom: 161px;
-  padding-right: 5px;
-  padding-left: 5px; }
+  margin-bottom: 161px; }
 
 .contact__small {
   text-align: center;
@@ -33,8 +31,14 @@
 
 .contact__flex__button {
   text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between; }
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .contact__button1 {
   text-align: center;
@@ -82,7 +86,10 @@
   .contact__description {
     width: 770px; }
   .contact__flex__button {
-    justify-content: center; }
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .contact__button1 {
     margin-right: 15px; }
   .contact__button1 {

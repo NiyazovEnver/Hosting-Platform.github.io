@@ -1,5 +1,6 @@
 .FAQ{
-	
+	width: 375px;
+	margin: 0 auto;
 	margin-bottom: 169px;
 }
 
@@ -25,6 +26,44 @@
 	font-size: 20px;
 	line-height: 32px;
 	margin-bottom: 46px;
+}
+
+.accordion {
+  background-color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 @media(min-width: 1200px){

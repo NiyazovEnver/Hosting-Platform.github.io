@@ -45,25 +45,38 @@
   color: white;
   font-size: 14px;
   font-weight: bold;
-  background-color: #ED3A4E; }
+  background-color: #ED3A4E;
+  border: none; }
   .register__form__button:hover, .register__form__button:focus, .register__form__button:active {
     background-color: rgba(237, 58, 78, 0.9);
     color: white;
     cursor: pointer; }
 
 .register form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
 
 @media (min-width: 1200px) {
   .register form {
-    flex-wrap: nowrap; }
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; }
   #name-domain {
     margin-right: 9px;
     width: 262px; }
   #domain {
     margin-right: 8px;
+    font-size: 16px;
+    line-height: 32px;
     width: 121px; }
   .register__form__button {
     width: 106px;

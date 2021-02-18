@@ -200,6 +200,7 @@
 		display: block;
 		width: 74px;
 		height: 18px;
+		color: white;
 		padding: 15px 40px;
 		background-color: #1D46F6;
 		border-radius: 10px;
@@ -303,16 +304,22 @@
 	}
 
 	.main-nav__item:last-child{
+		a{
 		padding: 15px 35px;
 		border: 1px solid white;
 		border-radius: 7px;
 		color: white;
 
+
 		&:hover,
 		&:focus,
 		&:active{
-			border: 1px solid rgba(255, 255, 255, 0.35);
-			border-radius: 7px;
+			background-color: rgba(255, 255, 255, 0.35);
+			border-color: #210C38;
+			/*color: rgba(255, 255, 255, 0.35);*/
+			color: white;
+		}
+
 		}
 	}
 

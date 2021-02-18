@@ -29,8 +29,10 @@
 	&:focus{
 		outline: none;
 		cursor: pointer;
+		color: rgba(51, 51, 51, 0.5);
 
 	}
+	
 }
 
 .price__toggle2{
@@ -43,18 +45,26 @@
 	&:focus{
 		outline: none;
 		cursor: pointer;
+		color: rgba(51, 51, 51, 0.5);
 
 	}
+
 }
 
 .price__toggle-center{
 	text-align: center;
 }
 
-.price__list{
+.price__list-month{
 	padding-left: 3px;
 	padding-right: 3px;
 }
+.price__list-yearly{
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+
 
 .price__list__item{
 	background-color: #F3F6FA;
@@ -130,6 +140,10 @@
 	}
 }
 
+.price--hidden{
+		display: none;
+	}
+
 @media(min-width: 1200px){
 	.price{
 		width: 1170px;
@@ -153,11 +167,21 @@
 		margin-bottom: 54px;
 	}
 
-	.price__list{
+	.price__list-month{
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
 
+	}
+
+	.price__list-yearly{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+	}
+	.price--hidden{
+		display: none;
 	}
 
 	.price__list__item{

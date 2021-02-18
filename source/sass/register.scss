@@ -54,6 +54,7 @@
 	font-size: 14px;
 	font-weight: bold;
 	background-color: #ED3A4E;
+	border: none;
 
 	&:hover,
 	&:focus,
@@ -81,6 +82,8 @@
 	}
 	#domain{
 		margin-right: 8px;
+		font-size: 16px;
+		line-height: 32px;
 		width: 121px;
 	}
 	.register__form__button{
