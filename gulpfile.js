@@ -43,7 +43,7 @@ gulp.task('code', function() {
 
 gulp.task('css-libs', function() {
 	return gulp.src('source/css/styles.css') // Выбираем файл для минификации
-		// .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
+		.pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
 		.pipe(cssnano()) // Сжимаем
 		.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
 		.pipe(gulp.dest('source/css')); // Выгружаем в папку app/css
@@ -73,8 +73,8 @@ gulp.task('prebuild', async function() {
 		])
 	.pipe(gulp.dest('dist/css'))
  
-	// var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
-	// .pipe(gulp.dest('dist/fonts'))
+	var buildFonts = gulp.src('source/fonts/**/*') // Переносим шрифты в продакшен
+	.pipe(gulp.dest('dist/fonts'))
  
 	var buildJs = gulp.src('source/js/**/*') // Переносим скрипты в продакшен
 	.pipe(gulp.dest('dist/js'))

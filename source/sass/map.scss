@@ -1,3 +1,4 @@
+@import "variables.scss";
 .map{
 	margin-bottom: 144px;
 }
@@ -14,7 +15,6 @@
 }
 
 .map__description{
-	color: #333333;
 	font-size: 40px;
 	line-height: 48px;
 	letter-spacing: -2px;
@@ -22,7 +22,7 @@
 	text-align: center;
 }
 
-@media(min-width: 1200px){
+@media(min-width: $screen-dekstop){
 	.map{
 		width: 1170px;
 	}
@@ -31,8 +31,11 @@
 	}
 	
 	.map__description{
+		margin: 0 auto;
+		width: 400px;
 		font-size: 56px;
 		line-height: 64px;
 		letter-spacing: -2px;
+		margin-bottom: 53px;
 	}
 }

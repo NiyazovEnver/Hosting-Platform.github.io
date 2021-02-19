@@ -11,19 +11,16 @@
   margin-bottom: 16px; }
 
 .recommendation__picture {
-  width: 329px;
-  height: 212px;
-  margin: 0 auto; }
+  width: 100%;
+  height: 212px; }
 
 .recommendation__title {
-  color: #333333;
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -1px;
   margin-bottom: 53px; }
 
 .recommendation__quote {
-  color: #333;
   margin: 0;
   margin-top: 38px;
   font-size: 20px;
@@ -32,7 +29,6 @@
 .recommendation__author {
   font-size: 16px;
   line-height: 32px;
-  color: #333;
   font-style: inherit;
   display: inline-block;
   margin-top: 10px; }
@@ -40,7 +36,6 @@
 .recommendation__post {
   font-size: 16px;
   line-height: 32px;
-  color: #333;
   font-style: inherit;
   opacity: 0.5;
   display: inline-block; }
@@ -80,8 +75,7 @@
     outline: none; }
 
 .recommendation__flex__item {
-  width: 329px;
-  height: 320px; }
+  width: 329px; }
 
 .slide {
   display: none;
@@ -121,14 +115,16 @@
     border: none;
     cursor: pointer; }
 
-@media (min-width: 1200px) {
+.recommendation__quote {
+  height: 300px; }
+
+@media (min-width: 768px) {
   .recommendation {
     width: 1170px;
     margin-bottom: 160px; }
   .recommendation__small {
     margin-bottom: 18px; }
   .recommendation__title {
-    color: #333333;
     font-size: 56px;
     line-height: 64px;
     letter-spacing: -2px;
@@ -167,7 +163,7 @@
     -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1; }
-  .recommendation__flex__item {
+  .recommendation__flex-item {
     width: 470px;
     margin-left: 30px; }
   .slide {
@@ -191,7 +187,8 @@
     display: -ms-flexbox;
     display: flex; }
   .recommendation__quote {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    height: auto; }
   .recommendation__picture {
     width: 570px;
     height: 368px;

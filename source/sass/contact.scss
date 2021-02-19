@@ -1,5 +1,7 @@
+@import "variables.scss";
+
 .contact{
-	
+	width: $mobile-width;
 	margin-bottom: 161px;
 	
 }
@@ -15,8 +17,8 @@
 	margin-bottom: 16px;
 }
 
-.contact__title{
-	width: 329px;
+.contact__title{/*
+	width: 100%;*/
 	font-size: 40px;
 	line-height: 48px;
 	letter-spacing: -2px;
@@ -28,8 +30,6 @@
 
 .contact__description{
 
-	width: 329px;
-	color: #333333;
 	font-size: 20px;
 	line-height: 32px;
 	margin: 0 auto;
@@ -42,7 +42,9 @@
 .contact__flex__button{
 	text-align: center;
 	display: flex;
+	width: 320px;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .contact__button1{
@@ -93,7 +95,8 @@
 
 }
 
-@media(min-width: 1200px){
+
+@media(min-width: $screen-dekstop){
 	.contact{
 		width: 1170px;
 
@@ -111,6 +114,7 @@
 		width: 770px;
 	}
 	.contact__flex__button{
+		width: auto;
 		justify-content: center;
 	}
 	.contact__button1{

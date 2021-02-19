@@ -10,11 +10,13 @@
   font-weight: 400;
   margin-bottom: 16px; }
 
+.news__item-wrapper {
+  padding: 24px; }
+
 .news__newsletter {
   margin-bottom: 89px; }
 
 .news__title {
-  color: #333333;
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -1px;
@@ -40,7 +42,6 @@
   width: 270px;
   border-radius: 10px;
   background-color: #F3F6FA;
-  padding-bottom: 22px;
   margin-bottom: 32px; }
   .news__list__item img {
     margin-bottom: 26px; }
@@ -48,31 +49,24 @@
     margin: 0; }
 
 .news__date {
-  color: #333;
   opacity: 0.5;
-  font-size: 16px;
-  line-height: 32px;
-  padding-left: 24px; }
-
-.news__item {
-  color: #333;
-  font-size: 20px;
-  line-height: 32px;
-  padding-left: 24px; }
-
-.news__item__categories {
-  padding-left: 24px;
   font-size: 16px;
   line-height: 32px; }
 
-.news__newsletter__title {
+.news__item {
+  font-size: 20px;
+  line-height: 32px; }
+
+.news__item-categories {
+  font-size: 16px;
+  line-height: 32px; }
+
+.news__newsletter-title {
   font-size: 20px;
   line-height: 32px;
-  font-weight: 400;
-  color: #333; }
+  font-weight: 400; }
 
-.news__newsletter__description {
-  color: #333;
+.news__newsletter-description {
   font-size: 16px;
   line-height: 32px;
   opacity: 0.5;
@@ -103,29 +97,28 @@
     line-height: 32px; }
 
 .news__newsletter__button {
-  width: 123px;
+  width: 100px;
   height: 48px;
   background-color: #1D46F6;
   text-transform: uppercase;
   border-radius: 7px;
+  border: 0;
   font-size: 14px;
   font-weight: bold;
   color: #fff; }
   .news__newsletter__button:hover, .news__newsletter__button:focus, .news__newsletter__button:active {
-    border-color: rgba(29, 70, 246, 0.5);
-    background-color: white;
-    color: #1D46F6;
+    outline: 0;
+    background-color: rgba(29, 70, 246, 0.8);
+    color: white;
     cursor: pointer; }
 
-.news__definition__title {
+.news__definition-title {
   font-size: 20px;
   line-height: 32px;
   font-weight: 400;
-  color: #333;
   margin-bottom: 17px; }
 
-.news__definition__description {
-  color: #333;
+.news__definition-description {
   font-size: 16px;
   line-height: 32px;
   opacity: 0.5;
@@ -134,7 +127,7 @@
 .news__login {
   margin: 0; }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .news {
     width: 1170px;
     margin: 0 auto;

@@ -1,5 +1,7 @@
+@import "variables.scss";
+
 .page-main{
-	width: 375px;
+	width: $mobile-width;
 	margin: 0 auto;
 	padding-right: 5px;
 	padding-left: 5px;
@@ -26,13 +28,11 @@
 	}
 
 .page-main__picture{
-	width: 329px;
-	margin: 0 auto;
+	width: 100%;
 	margin-bottom: 28px;
 }
 
 .features__description{
-		color: #333333;
 		font-size: 20px;
 		line-height: 32px;
 		margin-bottom: 16px;
@@ -50,7 +50,6 @@
 	}
 
 .features__title{
-		color: #333333;
 		font-size: 40px;
 		line-height: 48px;
 		letter-spacing: -2px;
@@ -92,9 +91,9 @@
 	}
 
 
-.features__item__description{
+.features__item-description{
 		display: block;
-		width: 338px;
+		width: 100%;
 		color: rgba(51, 51, 51, 0.5);
 		font-size: 16px;
 		line-height: 32px;
@@ -105,7 +104,7 @@
 	margin-bottom: 97px;
 }
 
-@media (min-width: 1200px){
+@media (min-width: $screen-dekstop){
 
 	.features{
 	margin-bottom: 177px;
@@ -145,8 +144,7 @@
 	
 }
 
-	.features__item__title{
-		color: #333333;
+	.features__item-title{
 		font-size: 24px;
 		line-height: 32px;
 		font-weight: bold;
@@ -155,7 +153,7 @@
 
 	}
 
-	.features__item__description{
+	.features__item-description{
 		display: block;
 		width: 338px;
 		color: rgba(51, 51, 51, 0.5);
@@ -177,7 +175,7 @@
 		margin-bottom: 160px;
 	}
 
-	.features__flex__elem{
+	.features__flex-item{
 		width: 476px;
 		padding-top: 45px;
 	}

@@ -1,7 +1,7 @@
-
+@import "variables.scss";
 .register{	
 	padding-top: 74px;
-	width: 375px;
+	width: $mobile-width;
 	margin: 0 auto;
 	padding-bottom: 80px;
 	
@@ -30,7 +30,7 @@
 }
 
 #name-domain{
-	width: 329px;
+	width: 100%;
 	height: 50px;
 	border-radius: 7px;
 	padding-left: 15px;
@@ -38,7 +38,7 @@
 }
 
 #domain{
-	width: 169px;
+	width: 150px;
 	height: 50px;
 	padding-left: 15px;
 	border-radius: 7px;
@@ -46,7 +46,7 @@
 }
 
 .register__form__button{
-	width: 148px;
+	width: 150px;
 	height: 50px;
 	border-radius: 7px;
 	text-transform: uppercase;
@@ -72,7 +72,7 @@
 	flex-wrap: wrap;
 }
 
-@media(min-width: 1200px){
+@media(min-width: $screen-dekstop){
 	.register form{
 		flex-wrap: nowrap;
 	}

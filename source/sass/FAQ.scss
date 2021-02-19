@@ -1,7 +1,9 @@
+@import "variables.scss";
+
 .FAQ{
-	width: 375px;
-	margin: 0 auto;
+	width: $mobile-width;
 	margin-bottom: 169px;
+	margin: 0 auto;
 }
 
 .FAQ__abbr{
@@ -15,14 +17,12 @@
 }
 
 .FAQ__title{
-	color: #333333;
 	font-size: 40px;
 	line-height: 48px;
 	letter-spacing: -1px;
 	margin-bottom: 15px;
 }
 .FAQ__description{
-	color: #333333;
 	font-size: 20px;
 	line-height: 32px;
 	margin-bottom: 46px;
@@ -31,15 +31,17 @@
 .accordion {
   background-color: #fff;
   cursor: pointer;
-  padding: 18px;
+  padding: 18px 0;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: bold;
   transition: 0.4s;
+  position: relative;
+
 }
 
 .active, .accordion:hover {
@@ -48,9 +50,9 @@
 
 .accordion:after {
   content: '\002B';
-
+  position: absolute;
   font-weight: bold;
-  float: right;
+  right: 20px;
   margin-left: 5px;
 }
 
@@ -66,11 +68,14 @@
   transition: max-height 0.2s ease-out;
 }
 
-@media(min-width: 1200px){
+@media(min-width: $screen-dekstop){
 	.FAQ{
 		width: 570px;
 		margin-bottom: 185px;
 
+	}
+	.accordion{
+		padding-left: 18px;
 	}
 	.FAQ__title{
 		font-size: 56px;

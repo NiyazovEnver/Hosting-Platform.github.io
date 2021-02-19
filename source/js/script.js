@@ -1,14 +1,26 @@
 let menu = document.querySelector(".main-nav__list");
 let button = document.querySelector(".main-nav__toggle");
 let nav=document.querySelector(".main-nav");
+let close = menu.querySelectorAll(".main-nav__item-link");
+
+
 
 button.addEventListener("click", function(evt){
-	
+
 	menu.classList.toggle("site-list");
 	nav.classList.toggle("main-nav--closed");
 	nav.classList.toggle("main-nav--opened");
 	
 });
+[].forEach.call(close,function(el){  
+  el.addEventListener("click", function(evt){
+    menu.classList.remove("site-list");
+  
+  nav.classList.remove("main-nav--opened");
+  nav.classList.add("main-nav--closed");
+});
+});
+
 
 
 var controls = document.querySelectorAll('.controls');
@@ -82,3 +94,4 @@ priceButtonMonth.addEventListener("click", function(evt){
 	priceButtonMonth.style.color="#333";
 	priceButtonYearly.style.color="rgba(51, 51, 51, 0.5)";
 });
+

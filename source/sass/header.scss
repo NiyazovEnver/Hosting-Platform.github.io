@@ -1,5 +1,5 @@
 
-
+@import "variables.scss";
 .visually-hidden:not(:focus):not(:active){
 	position: absolute;
 	width: 1px;
@@ -100,6 +100,22 @@
 
 }
 
+
+.main-nav--opened{
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	overflow: auto; 
+	width: 100vw; 
+	height: 100vh; 
+	z-index: 999;
+	background-color: $bg-color;
+
+	.page-header__logo{
+		margin-left: 20px;
+	}
+}
+
 .page-header__logo{
 		font-size: 40px;
 		line-height: 48px;
@@ -112,7 +128,7 @@
 	
 .page-header{
 	position: relative;
-	width: 375px;
+	width: 320px;
 	margin: 0 auto;
 	padding-top: 5px;
 	color: white;
@@ -129,10 +145,9 @@
 
 .page-header__picture{
 	order: -1;
-	margin: 0 auto;
 	margin-top: 32px;
 	margin-bottom: 25px;
-	width: 329px;
+	width: 100%;
 	
 }
 
@@ -145,7 +160,7 @@
 }
 
 .wrapper{
-	background-color: #210C38;
+	background-color: $bg-color;
 }
 
 .main-nav__item a{
@@ -165,10 +180,11 @@
 .main-nav__item{
 	text-transform: uppercase;
 	font-weight: bold;
-	border-bottom: 1px solid white;
-	/*border-radius: 5px;*/
 
-	width: 85%;
+	border-bottom: 1px solid white;
+
+
+	width: 100%;
 	padding: 12px 21px;
 }
 
@@ -216,18 +232,28 @@
 			color: #1D46F6;
 		}
 	}
-@media (max-width: 400px){
+/*@media (max-width: 400px){
 
 	.main-nav--closed .main-nav__item{
 		display: none;
 	}
-}
-@media(min-width: 1200px){
+}*/
+
+@media(min-width: $screen-dekstop){
 	.page-header__picture{
 	margin: 0;
 	order: 1;
 	margin-bottom: 25px;
 	width: 570px;
+}
+
+.main-nav--opened{
+	position: static; 
+	
+	width: 100%; 
+	height: auto; 
+	z-index: 0;
+	background-color: none;
 }
 			
 	.main-nav__toggle{
@@ -241,7 +267,7 @@
 	}
 	.wrapper{
 
-		background-color: #210C38;
+		background-color: $bg-color;
 		margin-bottom: 55px;
 	
 		

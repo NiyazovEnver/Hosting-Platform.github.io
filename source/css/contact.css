@@ -1,4 +1,5 @@
 .contact {
+  width: 320px;
   margin-bottom: 161px; }
 
 .contact__small {
@@ -12,7 +13,8 @@
   margin-bottom: 16px; }
 
 .contact__title {
-  width: 329px;
+  /*
+	width: 100%;*/
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -2px;
@@ -21,8 +23,6 @@
   text-align: center; }
 
 .contact__description {
-  width: 329px;
-  color: #333333;
   font-size: 20px;
   line-height: 32px;
   margin: 0 auto;
@@ -35,10 +35,15 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 320px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .contact__button1 {
   text-align: center;
@@ -74,7 +79,7 @@
     color: white;
     cursor: pointer; }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .contact {
     width: 1170px; }
   .contact__small {
@@ -86,6 +91,7 @@
   .contact__description {
     width: 770px; }
   .contact__flex__button {
+    width: auto;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;

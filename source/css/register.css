@@ -1,6 +1,6 @@
 .register {
   padding-top: 74px;
-  width: 375px;
+  width: 320px;
   margin: 0 auto;
   padding-bottom: 80px;
   margin-bottom: 126px; }
@@ -24,21 +24,21 @@
   font-weight: bold; }
 
 #name-domain {
-  width: 329px;
+  width: 100%;
   height: 50px;
   border-radius: 7px;
   padding-left: 15px;
   margin-bottom: 15px; }
 
 #domain {
-  width: 169px;
+  width: 150px;
   height: 50px;
   padding-left: 15px;
   border-radius: 7px;
   margin-right: 12px; }
 
 .register__form__button {
-  width: 148px;
+  width: 150px;
   height: 50px;
   border-radius: 7px;
   text-transform: uppercase;
@@ -65,7 +65,7 @@
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .register form {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;

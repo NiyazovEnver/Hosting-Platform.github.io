@@ -1,3 +1,4 @@
+@import "variables.scss";
 .downloads{
 
 	margin-bottom: 186px;
@@ -16,7 +17,6 @@
 }
 
 .downloads__title{
-	color: #333333;
 	font-size: 40px;
 	line-height: 48px;
 	letter-spacing: -2px;
@@ -24,15 +24,13 @@
 }
 
 .downloads__description{
-	color: #333333;
 	font-size: 20px;
 	line-height: 32px;
 	margin-bottom: 16px;
 }
 
 .downloads__picture{
-	width: 329px;
-	margin: 0 auto;
+	width: 100%;
 }
 
 .downloads__button{
@@ -57,7 +55,7 @@
 	}
 }
 
-@media(min-width: 1200px){
+@media(min-width: $screen-dekstop){
 	.downloads{
 		width: 1170px;
 		margin-bottom: 154px;
@@ -69,7 +67,7 @@
 		justify-content: space-between;
 	}
 
-	.downloads__flex__item{
+	.downloads__flex-item{
 		width: 450px;
 		padding-top: 74px;
 	}
@@ -79,7 +77,6 @@
 	}
 
 	.downloads__description{
-		color: #333333;
 		font-size: 20px;
 		line-height: 32px;
 		margin-bottom: 34px;

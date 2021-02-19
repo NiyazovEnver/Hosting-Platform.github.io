@@ -1,3 +1,4 @@
+@import "variables.scss";
 .services{
 	margin-bottom: 150px;
 	padding-left: 5px;
@@ -6,8 +7,7 @@
 }
 
 .services__picture{
-	margin: 0 auto;
-	width: 329px;
+	width: 100%;
 	margin-bottom: 28px;
 
 }
@@ -24,7 +24,6 @@
 	}
 
 .services__title{
-	color: #333333;
 	font-size: 40px;
 	line-height: 48px;
 	letter-spacing: -2px;
@@ -32,7 +31,6 @@
 }
 
 .services__description{
-	color: #333333;
 	font-size: 20px;
 	line-height: 32px;
 	margin-bottom: 16px;
@@ -67,13 +65,12 @@
 	flex-direction: column;
 }
 
-.services__item__title{
+.services__item-title{
 	font-size: 24px;
 	line-height: 32px;
-	color: #333;
 	margin-bottom: 18px;
 }
-.services__item__description{
+.services__item-description{
 	font-size: 16px;
 	line-height: 32px;
 	color: rgba(51, 51, 51, 0.5);
@@ -83,7 +80,6 @@
 .services__item{
 	font-size: 16px;
 	line-height: 32px;
-	color: #333;
 
 	&:hover,
 	&:active,
@@ -97,7 +93,7 @@
 	margin-bottom: 62px;	
 }
 
-@media(min-width: 1200px){
+@media(min-width: $screen-dekstop){
 	.services__flex{
 		flex-direction: row-reverse;
 		justify-content: space-between;
@@ -118,7 +114,7 @@
 		margin-bottom: 29px;
 	}
 
-	.services__flex__item{
+	.services__flex-item{
 		padding-top: 42px;
 		width: 470px;
 	}
