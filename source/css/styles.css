@@ -1651,7 +1651,7 @@
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
 
-.footer__flex__copyright {
+.footer__flex-copyright {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1660,7 +1660,7 @@
       -ms-flex-pack: distribute;
           justify-content: space-around;
   width: 100%; }
-  .footer__flex__copyright p {
+  .footer__flex-copyright p {
     color: white;
     font-size: 16px;
     line-height: 32px; }
